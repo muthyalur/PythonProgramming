@@ -60,3 +60,35 @@ print(k)
 pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four'), (5, 'five'), (6, 'six')]
 pairs.sort(key = lambda pair: pair[1], reverse = True)
 print(pairs)
+
+
+a = (1,2,3)
+b = (4,5)
+
+a += b
+print(a)
+
+c = [2,3,4,5]
+d = [6,7,8,10,2,3]
+e = c + d
+print(e)
+e.append(10)
+print(e)
+t = ['test']
+print(t)
+print(list('test'))
+
+
+import sys
+list_ex = [1, 2, 3, 'a', 'b', 'c', True, 3.14159]
+tuple_ex = (1, 2, 3, 'a', 'b', 'c', True, 3.14159)
+
+print("List size = ",sys.getsizeof(list_ex))
+print("Tuple size = ",sys.getsizeof(tuple_ex))
+
+
+import timeit
+list_test = timeit.timeit(stmt = "[1, 2, 3, 4, 5]", number = 1000000)
+tuple_test = timeit.timeit(stmt = "(1, 2, 3, 4, 5)", number = 1000000)
+print("List time: ", list_test)
+print("Tuple time: ", tuple_test)

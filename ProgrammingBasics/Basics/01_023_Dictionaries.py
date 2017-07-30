@@ -17,6 +17,18 @@ print(len(gradeDict))
 gradeDict = {'Rajeev':[89, 92], 
 			 'Dewakar':[94, 97],
 			 'Malasani':[97, 95]}
+
+
+print(80*'!')
+print(gradeDict.get('Dewakar'))
+print(gradeDict.get('Gireehsa', None))
+print(dir(gradeDict))
+help(gradeDict.pop)
+help(gradeDict.popitem)
+gradeDict.pop('Rajeev')
+print(gradeDict.pop('Rajeev','Not Present'))
+print(gradeDict)
+print(80*'!')
 			 
 print(gradeDict)
 print(len(gradeDict))
@@ -45,4 +57,5 @@ questions = ['name', 'quest', 'favorite color']
 answers = ['lancelot' , 'the holy grail', 'blue']
 for q,a in zip(questions, answers):
 	print('What is your {0}? It is {1}.'.format(q,a))
+
 

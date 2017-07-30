@@ -31,3 +31,6 @@ print(median(exList2))
 print(mode(exList2))
 print(variance(exList2))
 print(stdev(exList2))
+
+
+
