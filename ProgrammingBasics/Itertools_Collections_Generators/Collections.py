@@ -86,3 +86,12 @@ print(239*'-')
 from collections import defaultdict
 help(defaultdict)
 
+somedict = defaultdict(str)
+print(somedict['text1'])
+print(somedict)
+
+print(239*'-')
+from collections import OrderedDict
+help(OrderedDict)
+
+
